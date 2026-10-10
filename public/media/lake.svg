@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#6a838d"/><stop offset="1" stop-color="#c7bfb4"/></linearGradient>
+<linearGradient id="water" x2="0" y2="1"><stop stop-color="#22636d"/><stop offset="1" stop-color="#071923"/></linearGradient>
+<linearGradient id="sand" x2="0.5" y2="1"><stop stop-color="#d7ae80"/><stop offset="1" stop-color="#4d3639"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#405077"/><stop offset="1" stop-color="#161e32"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fdd2a0" stop-opacity=".75"/><stop offset="1" stop-color="#e3a882" stop-opacity="0"/></radialGradient>
+<radialGradient id="blueglow"><stop stop-color="#769ebc" stop-opacity=".48"/><stop offset="1" stop-color="#769ebc" stop-opacity="0"/></radialGradient>
+<radialGradient id="vignette"><stop offset=".3" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#020407" stop-opacity=".5"/></radialGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".45" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+</defs>
+<g filter="url(#grain)"><rect width="1600" height="1000" fill="url(#sky)"/>
+<path d="M0 493L250 197L535 473L815 230L1080 470L1370 151L1600 465V650H0Z" fill="#586f73"/>
+<path d="M142 325L250 197L384 328L266 290L227 320L214 281Z M690 363L815 230L909 330L814 295L788 327Z M1255 295L1370 151L1490 287L1380 249L1349 263L1323 236Z" fill="#d6d4c8"/>
+<path d="M0 506L353 365L513 524L882 439L1086 527L1427 394L1600 530V650H0Z" fill="#284746"/>
+<rect y="561" width="1600" height="439" fill="url(#water)"/>
+<path d="M0 561L250 855L535 582L815 823L1080 581L1370 901L1600 596V561Z" fill="#708686" opacity=".3"/>
+<path d="M0 561Q352 531 628 571T1161 555T1600 561" fill="none" stroke="#91a8a1" stroke-width="4"/>
+<path d="M0 924Q157 841 290 865L328 905L524 952L655 1000H0Z" fill="#122927"/>
+<path d="M1122 729L1321 729L1300 745H1143Z" fill="#d7b68c"/><path d="M1217 728L1217 637L1253 719Z" fill="#ebe4d8" opacity=".75"/>
+<rect width="1600" height="1000" fill="url(#vignette)"/></g>
+</svg>

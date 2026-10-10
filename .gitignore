@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+*.log
+*.tsbuildinfo
+.muying-data/
+__pycache__/
+*.pyc
+.env

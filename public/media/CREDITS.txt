@@ -1,0 +1,57 @@
+MUYING demo media
+================
+
+These are local demonstration assets. The titles, creator names, view counts,
+dates and displayed durations in src/data.ts are fictional interface sample data.
+All sample video entries play the same original 8-second demo.mp4. Their artwork
+is illustrative and is not a frame from the demo video.
+
+Original illustrations
+----------------------
+city-night.svg, rain-city.svg, coast.svg, mountains.svg, lake.svg,
+open-road.svg, forest.svg, quiet-room.svg, light-study.svg
+Created specifically for the MUYING prototype with local vector geometry,
+gradients, seeded procedural shapes and SVG filters. No third-party artwork.
+The reproducible illustration generator is generate-assets.py in this directory.
+
+Photographs, downloaded to this directory
+-----------------------------------------
+mountains-photo.jpg
+Source: https://raw.githubusercontent.com/vercel/next.js/canary/examples/image-component/public/mountains.jpg
+Repository: https://github.com/vercel/next.js
+Shown in the Next.js image-component example. Individual photographer attribution
+is not provided by that example file; no photographer name is asserted here.
+
+coffee-photo.jpg
+Source: https://raw.githubusercontent.com/google/material-design-lite/mdl-1.x/templates/blog/images/coffee.jpg
+Repository: https://github.com/google/material-design-lite
+Shown in the Material Design Lite blog template. Individual photographer
+attribution is not supplied by the downloaded source file.
+
+tropical-coast-photo.jpg
+Source: https://raw.githubusercontent.com/bedimcode/responsive-travel-website/main/assets/img/home1.jpg
+coast-cliff-photo.jpg (depicts an overhead boat and its wake)
+Source: https://raw.githubusercontent.com/bedimcode/responsive-travel-website/main/assets/img/about1.jpg
+island-photo.jpg
+Source: https://raw.githubusercontent.com/bedimcode/responsive-travel-website/main/assets/img/discover1.jpg
+lagoon-photo.jpg
+Source: https://raw.githubusercontent.com/bedimcode/responsive-travel-website/main/assets/img/place3.jpg
+cove-photo.jpg
+Source: https://raw.githubusercontent.com/bedimcode/responsive-travel-website/main/assets/img/place5.jpg
+Repository: https://github.com/bedimcode/responsive-travel-website
+These files are distributed as assets of that public travel-website demo.
+The README does not identify individual photographers or an image-specific
+license; no photographer names or additional license claims are asserted here.
+
+Original demonstration video
+----------------------------
+demo.mp4 was generated locally with FFmpeg 7.1.5 using an original animated
+color-field expression. No third-party footage, music, fonts, or text is used.
+Duration: 8.000 seconds. Resolution: 1280 x 720. Frame rate: 24 fps.
+Encoding: H.264 / AVC, yuv420p, MP4 container, fast-start metadata.
+The video has no audio track.
+
+Network note
+------------
+images.unsplash.com returned HTTP 403. No Unsplash image was downloaded.
+No MDN footage was downloaded; the original generated video is used instead.

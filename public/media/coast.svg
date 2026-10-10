@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#566c79"/><stop offset="1" stop-color="#e3bda2"/></linearGradient>
+<linearGradient id="water" x2="0" y2="1"><stop stop-color="#22636d"/><stop offset="1" stop-color="#071923"/></linearGradient>
+<linearGradient id="sand" x2="0.5" y2="1"><stop stop-color="#d7ae80"/><stop offset="1" stop-color="#4d3639"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#405077"/><stop offset="1" stop-color="#161e32"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#fdd2a0" stop-opacity=".75"/><stop offset="1" stop-color="#e3a882" stop-opacity="0"/></radialGradient>
+<radialGradient id="blueglow"><stop stop-color="#769ebc" stop-opacity=".48"/><stop offset="1" stop-color="#769ebc" stop-opacity="0"/></radialGradient>
+<radialGradient id="vignette"><stop offset=".3" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#020407" stop-opacity=".5"/></radialGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".45" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+</defs>
+<g filter="url(#grain)"><rect width="1600" height="1000" fill="url(#sky)"/>
+<ellipse cx="1080" cy="380" rx="440" ry="240" fill="url(#glow)"/><circle cx="1100" cy="385" r="48" fill="#efd4ac" opacity=".9"/>
+<rect y="480" width="1600" height="520" fill="url(#water)"/>
+<path d="M0 488L420 453L820 495L0 565Z" fill="#46606c"/>
+<path d="M0 450Q120 405 245 520Q310 600 385 652L542 745L730 849L603 1000H0Z" fill="#253c3d"/>
+<path d="M0 531Q210 483 250 638L443 725L600 825L547 882L0 702Z" fill="#46504b"/>
+<path d="M0 521Q220 455 278 641Q382 691 459 733L636 821" fill="none" stroke="#bfa884" stroke-width="12"/>
+<path d="M330 632Q518 676 560 735Q650 770 783 803Q823 885 999 945" fill="none" stroke="#d5dad1" opacity=".72" stroke-width="6"/>
+<path d="M360 611Q570 653 619 712Q805 735 918 842M617 511L1100 506M886 530L1440 524M1030 577L1570 568" fill="none" stroke="#d4e5df" opacity=".3" stroke-width="3"/>
+<path d="M1108 487L1225 986" stroke="#d1ae8d" stroke-width="40" opacity=".22" filter="url(#blur)"/>
+<rect width="1600" height="1000" fill="url(#vignette)"/></g>
+</svg>

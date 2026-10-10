@@ -1,0 +1,13 @@
+services:
+  muying:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MUYING_ADMIN_TOKEN: ${MUYING_ADMIN_TOKEN:?Set MUYING_ADMIN_TOKEN in deployment secrets or .env}
+      MUYING_ALLOWED_HOSTS: ${MUYING_ALLOWED_HOSTS:?Set trusted public source hostnames, comma separated}
+    volumes:
+      - muying-videos:/data
+    restart: unless-stopped
+volumes:
+  muying-videos:

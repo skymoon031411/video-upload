@@ -1,0 +1,19 @@
+# Requires a Render account. The paid persistent disk preserves the video library.
+services:
+  - type: web
+    name: muying-video
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: MUYING_ADMIN_TOKEN
+        generateValue: true
+      - key: MUYING_DATA_DIR
+        value: /data
+      - key: MUYING_ALLOWED_HOSTS
+        value: raw.githubusercontent.com,www.ck-download.com,ck-download.com,javboys.net,www.javboys.net,netfuck.net,www.netfuck.net
+    disk:
+      name: muying-video-library
+      mountPath: /data
+      sizeGB: 10
